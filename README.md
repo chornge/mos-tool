@@ -1,5 +1,8 @@
 The Mongoose OS command line tool for Raspberry Pi
 =================================
+## Rationalle
+I wanted to see if mongoose os could be used from the raspberry pi. However its not as easy as on the website. First hurdle is that the mos tool has not been compiled for Raspberry Pi. I then found the build instructions on github for the mos-tool. Learned a bit about different architectures, installed a later version of Golang, and did get it to work. 
+I have to say... mos is a bit slow on the rPi. But it does work!
 
 ## Building
 
@@ -49,6 +52,7 @@ Now, `mos` tool can be built:
 
 ```
 make -C mos install
+It will produce the binary `$GOPATH/bin/mos`.
 ```
 On the rpi with its limited memory, it may be neccessary to shut down any memory hungry apps (i.e chromium) or the compilation will fail with. 
 
@@ -64,7 +68,7 @@ To check avaliable memory:
 free -h
 ```
 
-It will produce the binary `$GOPATH/bin/mos`.
+
 
 
 
