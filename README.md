@@ -69,9 +69,6 @@ To check avaliable memory:
 free -h
 ```
 
-
-
-
 ## Changelog
 
 See [release notes for this repo](https://github.com/cesanta/mos-tool/releases).
