@@ -44,19 +44,20 @@ cd $GOPATH/src/cesanta.com
 
 Fetch all vendored packages and save them under the `vendor` dir:
 
-```
-$ govendor sync -v
+```bash
+govendor sync -v
 ```
 
 Now, `mos` tool can be built:
 
-```
+```bash
 make -C mos install
-It will produce the binary `$GOPATH/bin/mos`.
 ```
+It will produce the binary `$GOPATH/bin/mos`.
+
 On the rpi with its limited memory, it may be neccessary to shut down any memory hungry apps (i.e chromium) or the compilation will fail with the following error. 
 
-````
+```bash
 /home/pi/go/pkg/tool/linux_arm/link: running gcc failed: fork/exec /usr/bin/gcc: cannot allocate memory
 
 Makefile:30: recipe for target 'install' failed
