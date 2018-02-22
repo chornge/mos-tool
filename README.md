@@ -8,7 +8,7 @@ I have to say... mos is a bit slow on the rPi. But it does work!
 
 Minimal required Go version is 1.8. The golang included with rpi is not a recent enough version.
 
-Instructions based on this https://alexatnet.com/install-go-on-raspberry/
+Instructions based on this [go install on rpi](https://alexatnet.com/install-go-on-raspberry/)
 ```bash 
 wget https://storage.googleapis.com/golang/go1.8.3.linux-armv6l.tar.gz
 sudo tar -C /home/pi -xzf go1.8.3.linux-armv6l.tar.gz
